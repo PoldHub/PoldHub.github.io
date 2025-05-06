@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>👀</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="img/door.png" alt="Porta" class="door-image">
+        </div>
+        
+        <div class="countdown-container">
+            <div class="countdown">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <span class="time-label">Giorni</span>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <span class="time-label">Ore</span>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <span class="time-label">Minuti</span>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <span class="time-label">Secondi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="turntable-container">
+        <img src="img/disco.png" alt="Base del giradischi" class="turntable-base" id="discoBase">
+        <img src="img/vinile.png" alt="Vinile" class="turntable-vinyl" id="vinileRecord">
+        <img src="img/pin.png" alt="Puntina" class="turntable-pin" id="pinArm">
+    </div>
+
+    <div class="tv-container" id="tvContainer">
+        <img src="img/paga.png" alt="YouTube Channel" class="tv-image">
+    </div>
+
+    <div id="donationPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Fai una Donazione al team!</h2>
+            
+            <div class="donation-info">
+                <p>Ti chiediamo <strong>egregiamente</strong> di aggiungere nella nota di PayPal il tuo <strong>nickname</strong> e un <strong>messaggio</strong>, così potremo ringraziarti qui sotto!!!</p>
+            </div>
+            
+            <div class="paypal-me-button">
+                <a href="https://www.paypal.me/paolovillotta1" target="_blank" class="paypal-btn">
+                    Dona con PayPal
+                </a>
+            </div>
+            
+            <div class="donors-section">
+                <h3>I nostri donatori sigma</h3>
+                <div id="donorsList" class="donors-list">
+                    <!-- I donatori verranno caricati dal CSV -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
