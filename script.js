@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const vinile = document.getElementById('vinileRecord');
     const pin = document.getElementById('pinArm');
     
-    const audio = new Audio('leak.mp3');
+    const audio = new Audio('leak2.mp3');
     
     let isPlaying = false;
     
