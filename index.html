@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+    <meta property="og:title" content="PoldHub" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://poldhub.github.io/" />
+    <meta property="og:image" content=https://poldhub.github.io/media/papera.png" />
+    <meta property="og:description" content="Mi dichiaro la prima posizione numerica" />
+    <meta name="theme-color" content="#ff6c04" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>PoldHub</title>
+    <link rel="icon" href="media/icon.png" type="image/png">
+    <link rel="shortcut icon" href="media/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="media/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#" class="logo-link">
+                    <img src="media/papera.png" alt="Logo PoldHub" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#download" class="nav-link" aria-label="Download">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="nav-icon">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                        </svg>
+                        <span class="nav-text">Download</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#support" class="nav-link" aria-label="Donazioni">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="nav-icon">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="nav-text">Donazioni</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#crediti" class="nav-link" aria-label="Crediti">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="nav-icon">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        </svg>
+                        <span class="nav-text">Crediti</span>
+                    </a>
+                </li>
+                <li class="nav-item gamejolt-item">
+                    <a href="https://gamejolt.com/games/poldhub/834227" class="nav-link" target="_blank" aria-label="GameJolt">
+                        <img src="media/gamejolt.png" alt="GameJolt" class="gamejolt-logo desktop-only">
+                        <img src="media/LOGOjolt.png" alt="GameJolt" class="gamejolt-logo mobile-only">
+                    </a>
+                </li>
+                <li class="nav-item gamebanana-item">
+                    <a href="https://gamebanana.com/mods/594029" class="nav-link" target="_blank" aria-label="GameBanana">
+                        <img src="media/banana.png" alt="GameBanana" class="gamebanana-logo desktop-only">
+                        <img src="media/LOGObanana.png" alt="GameBanana" class="gamebanana-logo mobile-only">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="hero-section">
+        <div class="flame-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="media/logo.png" alt="Friday Night Funkin' PoldHub">
+                </div>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn download-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="download-icon">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                        </svg>
+                        Scaricala ORA!
+                    </a>
+                    <a href="#support" class="btn support-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" class="heart-icon">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        Sostieni la mod
+                    </a>
+                </div>
+                <div class="hero-tagline">
+                    " Annaffiare una pianta morta potra' non avere senso, ma nel mentre, abbiamo creato un mare di possibilita' "
+                </div>
+            </div>
+            <div class="hero-artwork">
+                <img src="media/wombo.png" alt="Personaggi del gioco">
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="download" class="download-section">
+            <h2 class="section-title">Download PoldHub</h2>
+            <div class="download-grid">
+                <a href="downloads/poldhub-windows.zip" class="download-card-link" download="PoldHub-Windows.zip">
+                    <div class="download-card">
+                        <div class="platform-icon windows-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="29" height="29" fill="white">
+                                <path d="M0 3.449L9.75 2.1v9.45H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.45L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                            </svg>
+                        </div>
+                        <h3 class="platform-name">Windows</h3>
+                        <p class="platform-description">Usa il pc da gayming</p>
+                        <span class="platform-size">50MB</span>
+                    </div>
+                </a>
+                
+                <a href="downloads/poldhub-linux.tar.gz" class="download-card-link" download="PoldHub-Linux.tar.gz">
+                    <div class="download-card">
+                        <div class="platform-icon linux-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32">
+                                <path fill="currentColor" d="M22.612 20.522A6.16 6.16 0 0 0 24 16.525C24 13.48 21.981 11 19.5 11a4.24 4.24 0 0 0-3.5 2.06A4.24 4.24 0 0 0 12.5 11C10.019 11 8 13.479 8 16.525a6.16 6.16 0 0 0 1.388 3.997c-.569.368-.939.641-.988.678a1 1 0 0 0-.18 1.425C8.66 23.175 12.616 28 16 28s7.34-4.825 7.78-5.375a1 1 0 0 0-.18-1.425a19 19 0 0 0-.988-.678M12.5 13c1.355 0 2.5 1.614 2.5 3.525v1.567a9 9 0 0 0-1.024.231A3 3 0 0 0 14 18c0-1.104-.672-2-1.5-2s-1.5.896-1.5 2a2.4 2.4 0 0 0 .407 1.362c-.081.042-.169.08-.248.122A4.03 4.03 0 0 1 10 16.525C10 14.615 11.145 13 12.5 13M16 26c-1.57 0-3.965-2.084-5.52-3.806C11.9 21.28 14.266 20 16 20s4.1 1.279 5.52 2.194C19.965 23.916 17.57 26 16 26m4.84-6.516c-.078-.041-.166-.08-.247-.122A2.4 2.4 0 0 0 21 18c0-1.104-.672-2-1.5-2s-1.5.896-1.5 2a3 3 0 0 0 .024.323A9 9 0 0 0 17 18.092v-1.567C17 14.615 18.145 13 19.5 13s2.5 1.614 2.5 3.525a4.03 4.03 0 0 1-1.16 2.96"/><path fill="currentColor" d="M30 30a3.89 3.89 0 0 1-4-4V14a10 10 0 0 0-20 0v12a3.89 3.89 0 0 1-4 4v-2a1.88 1.88 0 0 0 2-2V14a12 12 0 0 1 24 0v12a1.883 1.883 0 0 0 2 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="platform-name">Linux</h3>
+                        <p class="platform-description">I use Arch BTW</p>
+                        <span class="platform-size">45MB</span>
+                    </div>
+                </a>
+                
+                <a href="downloads/poldhub-macos.dmg" class="download-card-link" download="PoldHub-macOS.dmg">
+                    <div class="download-card">
+                        <div class="platform-icon macos-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                                <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+                            </svg>
+                        </div>
+                        <h3 class="platform-name">macOS</h3>
+                        <p class="platform-description">La grande mela</p>
+                        <span class="platform-size">55MB</span>
+                    </div>
+                </a>
+                
+                <a href="downloads/poldhub-cne-modpack.zip" class="download-card-link" download="PoldHub-CNE-Modpack.zip">
+                    <div class="download-card">
+                        <div class="platform-icon cne-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="white">
+                                <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="platform-name">CNE Modpack</h3>
+                        <p class="platform-description">Questa la ficchi dove vuoi</p>
+                        <span class="platform-size">90MB</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- La sezione gamebanana-section è stata rimossa -->
+        </section>
+        
+        <section id="support" class="support-section">
+            <h2 class="section-title">Sostieni il Progetto</h2>
+            <div class="support-container">
+                <div class="support-text">
+                    <p class="support-paragraph">La PoldHub è un progetto realizzato con passione e dedizione dal nostro team.</p>
+                    <p class="support-paragraph">Se ti piace il nostro lavoro e vorresti supportarci, considera una donazione!</p>
+                    <p class="support-paragraph">Ogni contributo, piccolo o grande, ci aiuta a continuare lo sviluppo e miglioramento della mod.</p>
+                    <p class="support-paragraph">Ricorda di inserire come Nota su PayPal un Nome e Messaggio per essere ringraziato qui sotto.</p>
+                    <p class="support-paragraph">[Allega il tuo Discord per ottenere Sneek Peek e partecipare ai Testing]</p>
+                    <div class="paypal-donate-container">
+                        <a href="https://www.paypal.com/paypalme/fnfpoldhub69" class="paypal-btn" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="paypal-icon">
+                                <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/>
+                            </svg>
+                            Dona con PayPal
+                        </a>
+                    </div>
+                    
+                    <div class="donors-section-integrated">
+                        <h3 class="donors-heading">Ringraziamo i nostri donatori:</h3>
+                        <div class="donors-container">
+                            <div class="donor-card">
+                                <div class="donor-info">
+                                    <h3 class="donor-name">Alessandro B.<span class="donor-amount">10€</span></h3>
+                                    <p class="donor-message">"Meritati. Top mod di fnf aspetto con ansia la versione full"</p>
+                                </div>
+                            </div>
+                            <div class="donor-card">
+                                <div class="donor-info">
+                                    <h3 class="donor-name">Giacomo M.<span class="donor-amount">10€</span></h3>
+                                    <p class="donor-message">"Non ci ha fornito una nota"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="crediti" class="credits-section">
+            <h2 class="section-title">Crediti</h2>
+            
+            <div class="credits-grid">
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/prince.png" alt="Prince" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Prince</h4>
+                            <span class="credit-role">Direttore della Mod</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Proviamo a fare una mod di fnf, sara' divertente - (cit.Prince2021)</p>
+                    <a href="https://www.instagram.com/prince_of_nothin" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/ric.png" alt="RicRanX" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">RicRanX</h4>
+                            <span class="credit-role">Co-Direttore della Mod - (in teoria)</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Man, a watermelon!</p>
+                    <a href="https://youtube.com/@ricran06" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/nile.png" alt="EnderNile8182" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">EnderNile8182</h4>
+                            <span class="credit-role">Coder, Artista, Animatore e Direzione dei Menu e Sfondi</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Per il bene del team ho preparato l'antipasto, il primo, il secondo, il terzo (perche' si), il dessert e le bibite</p>
+                    <a href="https://linktr.ee/8182nile" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/nex.png" alt="Nex.isDumb" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Nex.isDumb</h4>
+                            <span class="credit-role">Direzione Coding e Main Coder</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Ma quindi, furrealta'?</p>
+                    <a href="https://linktr.ee/just_nex" class="credit-link" target="__blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/jes.png" alt="Jesgran" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Jesgran</h4>
+                            <span class="credit-role">Coder e Web Developer</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">[root@ThinkPad ~]# git push origin --delete demo-v2</p>
+                    <a href="https://jes.is-a.dev/" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/andrex.png" alt="Andr3x40" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Andr3x40</h4>
+                            <span class="credit-role">Charter, Editor e Direzione Chart</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Vi spacco le dita e le braccia (questa citazione l'ho rubata da Camellia)</p>
+                    <a href="https://linktr.ee/andr3x40" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/brag.png" alt="BragBigfoot" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">BragBigfoot</h4>
+                            <span class="credit-role">Charter, Voice Actor e Coder</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Immagina se synergo avesse una panda 4x4</p>
+                    <a href="https://www.youtube.com/@Bragbigfoot" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/matt.png" alt="Mattouh" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Mattouh</h4>
+                            <span class="credit-role">Artista, Animatore e Direzione degli Sprite e Menu</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Giuro che Xiuder lo sistemo</p>
+                    <a href="https://x.com/matt0uh" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/gabri.png" alt="Gabrifulup13" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Gabrifulup13</h4>
+                            <span class="credit-role">Artista e Animatore</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Ottima mod, 10 su 10, ok prince ora puoi togliere la pistola dalla mia tempia</p>
+                    <a href="https://www.youtube.com/@gabrifulup13" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/manu.png" alt="ComedianManuel" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">ComedianManuel</h4>
+                            <span class="credit-role">Artista e Animatore</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Buon momento per controllare i crediti, devo dirtelo</p>
+                    <a href="https://www.instagram.com/comedian_manuel" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/Marcronis.png" alt="Marcronis" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Marcronis</h4>
+                            <span class="credit-role">Artista e Animatore</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Io una volta ero piccolo. Me ne sono appena accorto</p>
+                    <a href="https://x.com/Marcronis1" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/takki.png" alt="TakkiKeroppi" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Takki.Keroppi</h4>
+                            <span class="credit-role">Artista e Direzione degli Sfondi</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Giuro, non sono schizofrenica marescia'</p>
+                    <a href="https://linktr.ee/takkikeroppi" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/sus.png" alt="SUSGuy" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">SUSGuy</h4>
+                            <span class="credit-role">Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Ti diamo il benvenuto nella sezione appunti di Gboard, dove verra' salvato il testo copiato</p>
+                    <a href="https://www.youtube.com/@SUSguy1945" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/buttertoast.png" alt="ButterToast" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">ButterToast</h4>
+                            <span class="credit-role">Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Il database dei virus di Avast e' stato aggiornato</p>
+                    <a href="https://www.youtube.com/@NovaTheRealOne" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/mouse.png" alt="Mouse:3" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Mouse:3</h4>
+                            <span class="credit-role">Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow maow mrrrp :3</p>
+                    <a href="https://www.youtube.com/@mouseowo" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/pat.png" alt="This Is Pat" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">This Is Pat</h4>
+                            <span class="credit-role">Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Gli amici sono come il pane, se vedi uno scozzese svolta a destra</p>
+                    <a href="https://www.instagram.com/_thisis.pat_" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/lore.png" alt="Lorenzo Farina" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Lorenzo Farina</h4>
+                            <span class="credit-role">Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Logo di apertura realizzato da Lorenzo Farina perche' anche l'occhio vuole la sua parte!</p>
+                    <a href="https://www.instagram.com/lorenzofarina_art" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/ICER.png" alt="ICERR" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">ICERR</h4>
+                            <span class="credit-role">Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">SI SCRIVE CON TRE ERRRE!!!</p>
+                    <a href="https://www.youtube.com/@ICERRR_FROM_BEYOND" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/majin.png" alt="TheMajin" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">TheMajin</h4>
+                            <span class="credit-role">Ex-Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">IT'S HAPPY HOUR!!!!</p>
+                    <a href="https://www.youtube.com/@themajin00" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/yume.png" alt="Yumeko" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Yumeko</h4>
+                            <span class="credit-role">Composer</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">quando cucino io, il forno e' spento</p>
+                    <a href="https://www.youtube.com/@Yumeko_hehe" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/val.png" alt="VacantVal" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">VacantVal</h4>
+                            <span class="credit-role">Composer</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Ascoltate gli Architects vi prego</p>
+                    <a href="https://x.com/VacantVal" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/Zif0o.png" alt="Zif0o" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Zif0o</h4>
+                            <span class="credit-role">Composer</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">I was told to be divided by 0 and I became god itself</p>
+                    <a href="https://alphezgd.newgrounds.com/audio" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/magmah.png" alt="Magmah" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Magmah</h4>
+                            <span class="credit-role">Ex-Composer</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Questa è una traccia italiana</p>
+                    <a href="https://www.youtube.com/@MagmaHeeHee" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/jack.png" alt="Jack-O'-Dubber" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Jack-O'-Dubber</h4>
+                            <span class="credit-role">Voice Actor e Artista</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Nel caso non si fosse capito sono la prima posizione numerica</p>
+                    <a href="https://linktr.ee/Jack_O_Dubber" class="credit-link" target="_blank">Socials</a>
+                </div>
+                
+                <div class="credit-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/firenova.png" alt="FireNova" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">FireNova</h4>
+                            <span class="credit-role">Artista ed Editor</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">L'uomo giusto è quello che non spende..mi stavo sballando sotto le stelle.</p>
+                    <a href="https://www.instagram.com/gab_draws_stuff" class="credit-link" target="_blank">Socials</a>
+                </div> 
+                <div class="credit-card special-card">
+                    <div class="credit-header">
+                        <div class="credit-icon">
+                            <img src="credits/thx.png" alt="Special Thanks" class="credit-img">
+                        </div>
+                        <div class="credit-info">
+                            <h4 class="credit-name">Special Thanks</h4>
+                            <span class="credit-role">Chromatics & Voices</span>
+                        </div>
+                    </div>
+                    <p class="credit-quote">Sh_the_dubber - Usually Kat<br>HeistIsHere - Ervalul - Wolf</p>
+                </div>             
+            </div>
+        </section>
+    </main>
+</body>
+</html>

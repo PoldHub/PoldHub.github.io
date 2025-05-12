@@ -1,0 +1,1119 @@
+@font-face {
+    font-family: 'PoldoMetal';
+    src: url('media/PoldoMetal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PoldoMetal', Arial, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #000000, #491101);
+    color: white;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+}
+
+.logo-link {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.1);
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    margin-right: 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.nav-item {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.nav-item.gamebanana-item {
+    margin-left: 0;
+    align-items: center;
+}
+
+.nav-item.gamejolt-item {
+    margin-right: 0;
+    margin-left: auto; 
+    align-items: center;
+}
+
+.nav-item.gamebanana-item {
+    margin-left: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #ff8f25;
+}
+
+.nav-link:hover .nav-icon {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.gamebanana-logo {
+    height: 36px;
+    width: auto;
+    vertical-align: middle;
+    border-radius: 0;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.nav-link:hover .gamebanana-logo {
+    transform: scale(1.1);
+}
+
+.gamejolt-logo {
+    height: 36px;
+    width: auto;
+    vertical-align: middle;
+    border-radius: 0;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.nav-link:hover .gamejolt-logo {
+    transform: scale(1.1);
+}
+
+.desktop-only {
+    display: inline-block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.4s, opacity 0.3s;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    background: url('media/bg2.png') center center/cover no-repeat;
+    background-color: #ff6b00;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flame-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('media/fiamme.png') center center/cover no-repeat;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    z-index: 2;
+    padding: 2rem 0;
+}
+
+.hero-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-logo {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero-logo img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PoldoMetal', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: auto;
+    gap: 8px;
+}
+
+.download-btn {
+    background: #FFA000;
+    color: white;
+}
+
+.support-btn {
+    background: #00BCD4;
+    color: white;
+}
+
+.download-icon, .heart-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2px;
+}
+
+.download-btn:hover .download-icon,
+.support-btn:hover .heart-icon {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.hero-tagline {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero-artwork {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-artwork img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .navbar-container {
+        padding: 0;
+        justify-content: space-around;
+    }
+    
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        background: transparent;
+        height: auto;
+        padding-top: 0;
+    }
+    
+    .nav-item {
+        width: auto;
+        text-align: center;
+    }
+    
+    .nav-icon {
+        display: inline-block;
+        margin-right: 0;
+    }
+    
+    .nav-text {
+        display: none;
+    }
+    
+    .gamebanana-logo {
+        height: 30px;
+        border-radius: 8px;
+    }
+    
+    .gamejolt-logo {
+        height: 30px;
+        border-radius: 8px;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: inline-block;
+    }
+    
+    .nav-link {
+        padding: 0.5rem;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    
+    .nav-item.gamebanana-item {
+        margin: 0;
+    }
+    
+    .nav-item.gamejolt-item {
+        margin: 0;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+    
+    .hero-container {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+    
+    .hero-content, .hero-artwork {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .hero-artwork {
+        margin-top: 2rem;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-artwork img {
+        width: 100%;
+        max-height: none;
+        object-fit: contain;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-logo {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: auto;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+    
+    .hero-tagline {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .download-icon, .heart-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.download-section {
+    background: linear-gradient(to bottom, #4C1200, #11121F);
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.download-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.download-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.download-card-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.download-card-link::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.download-card-link:hover::after {
+    opacity: 1;
+}
+
+.download-card {
+    background-color: #1A1D2B;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.download-card::before {
+    content: 'Scarica';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFA000;
+    color: white;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.download-card-link:hover .download-card::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.download-card-link:hover .download-card {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.platform-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.windows-icon {
+    background-color: #0078D7;
+}
+
+.android-icon {
+    background-color: #3DDC84;
+}
+
+.macos-icon {
+    background-color: #333333;
+}
+
+.linux-icon {
+    background-color: #FCC624;
+}
+
+.cne-icon {
+    background-color: #673AB7;
+}
+
+.osu-icon {
+    background-color: #FF66AA;
+}
+
+.platform-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.platform-description {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #aaa;
+}
+
+.platform-size {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.gamebanana-section {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gamebanana-button {
+    background: linear-gradient(to right, #FF4081, #FF9966);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 64, 129, 0.4);
+}
+
+.gamebanana-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 64, 129, 0.6);
+}
+
+@media (max-width: 992px) {
+    .download-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .download-title {
+        font-size: 2rem;
+    }
+}
+
+.donors-section {
+    background-color: #11121F;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff8f25;
+}
+
+.donors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.donor-card {
+    background-color: rgba(20, 23, 40, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+}
+
+.donor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.donor-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.donor-name {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donor-amount {
+    color: #ffcb2c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.donor-message {
+    color: #aaa;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.support-section {
+    background: linear-gradient(to bottom, #11121F, #11121F);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.support-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.support-text {
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.support-heading {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #ffcb2c;
+    text-align: center;
+}
+
+.support-paragraph {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+    color: #e0e0e0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.support-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2.5rem auto;
+    max-width: 800px;
+}
+
+.support-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.feature-text {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.support-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.donation-tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.donation-tier {
+    background-color: rgba(20, 23, 40, 0.8);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-tier:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.featured-tier {
+    border: 2px solid #ffcb2c;
+    transform: scale(1.05);
+}
+
+.featured-tier:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.tier-popular {
+    position: absolute;
+    top: -12px;
+    background-color: #ff4081;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tier-name {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tier-price {
+    color: #ffcb2c;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.tier-description {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tier-donate-btn {
+    background: linear-gradient(to right, #ff8f25, #ff6b00);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 80%;
+}
+
+.tier-donate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 143, 37, 0.4);
+}
+
+.custom-donation {
+    background-color: rgba(20, 23, 40, 0.8);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+.custom-title {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.paypal-donate-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.paypal-btn {
+    background-color: #0070ba;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    width: auto;
+    max-width: 300px;
+}
+
+.paypal-btn:hover {
+    background-color: #003087;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 112, 186, 0.4);
+}
+
+.paypal-icon {
+    height: 24px;
+    width: auto;
+}
+
+@media (max-width: 992px) {
+    .support-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .donation-tiers {
+        flex-direction: column;
+    }
+    
+    .featured-tier {
+        transform: none;
+        order: -1;
+    }
+    
+    .featured-tier:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 576px) {
+    .support-text, .support-action {
+        padding: 1rem;
+    }
+    
+    .support-heading {
+        font-size: 1.5rem;
+    }
+    
+    .tier-price {
+        font-size: 1.8rem;
+    }
+}
+
+.credits-section {
+    background: linear-gradient(to bottom, #11121F, #1A1A2E);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.credit-card {
+    background-color: rgba(30, 35, 60, 0.8);
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    justify-content: space-between;
+}
+
+.credit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.credit-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.credit-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.credit-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.credit-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.credit-name {
+    font-size: 1rem;
+    margin: 0 0 0.2rem 0;
+}
+
+.credit-role {
+    color: #aaa;
+    font-size: 0.8rem;
+    font-weight: normal;
+    display: block;
+}
+
+.credit-quote {
+    font-style: italic;
+    color: #f5ecec;
+    font-size: 0.8rem;
+    margin: 0.5rem 0 1.5rem 0;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.credit-link {
+    display: inline-block;
+    background: linear-gradient(to right, #ff9640, #ff7b00);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    align-self: center;
+}
+
+@media (max-width: 1200px) {
+    .credits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .credits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .donors-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .donor-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .credits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title, .credits-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .credit-card {
+        padding: 1rem;
+    }
+}
+
+.donors-section-integrated {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donors-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffcb2c;
+    text-align: center;
+    position: relative;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
